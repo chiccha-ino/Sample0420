@@ -1,87 +1,141 @@
 @charset "utf-8";
+html {
+    height: 100vh;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    background: F6F6F6;
-    color: #333;
+    background: #F6F6F6;
+    color: #515151;
     font-size: 13px;
-    line-height: 150%;
+    line-height: 180%;
     border-top: solid 10px #6CC6C4;
-}
-.wrapper {
-    width: 960px;
-    text-align: left;
-    margin: 0 auto 80px auto;
+    height: 100vh;
 }
 
-#header {
+#wrapper {
+    width: 920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------- header ---------------*/
+header {
+    height: 130px;
+    /*background: #CCC;*/
     position: relative;
-    height: 200px;
 }
 
-#ClinicLogo {
+h1 {
+    /*background-color: blue;*/
     position: absolute;
-    left: 0px;
+    top: 30%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 img {
+    max-width: 100%;
+    height: auto;
 }
 
 #catchcopy {
-    text-align: right;
-    right: 0px;
-    padding: 0;
-    margin: 0;
-    font-size: 80%;
-}
-
-#headinfo {
     position: absolute;
+    top: 10px;
+    right: 0;
+    /*background: beige;*/
+    font-size: 75%;
+}
+
+#info {
+    position: absolute;
+    /* background-color: palegoldenrod; */
+    right: 0;
+    width: 215px;
     top: 40px;
-    right: 0px;
     height: 80px;
-    width: 200px;
-    margin: 0;
 }
 
-#headinfo .tel{
-    text-align: right;
+#tel {
     font-size: 200%;
+    margin: 15px 0 0 0;
+    padding-left: 30px;
+    position: absolute;
+    background: url(img/bgTel.png) left center no-repeat;
+}
+
+#open {
+    position: absolute;
+    font-size: 75%;
+    border: solid 1px #CCC;
+    width: 212px;
+    bottom: 0;
+    text-align: center;
+    padding: 5px 0;
     margin: 0;
 }
 
-#headinfo .Reception{
-    right: 0px;
-    text-align: center;
-    padding: 5px;
-    border: solid 1px gray;
-    font-size: 80%;
-}
-
-#headinfo .Reception span {
+#open span {
     color: darkred;
 }
 
-#header nav {
-    position: absolute;
-    bottom: 0px;
-}
-
-#header nav ul {
+/*--------------- nav ---------------*/
+nav {
+    height: 80px;
+    background: #6CC6C4;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-    height: 70px;
-    width: 958px;
-    padding: 0px;
-    text-align: center;
     align-items: center;
-    border: solid 1px gray;
+    padding: 0;
+    margin: 0;
 }
 
-#header nav ul li {
+.navitem {
+    margin: 0 auto;
+    padding: 0;
+    width: 20%;
+    height: 100%;
     text-align: center;
 }
 
-#header nav ul li a {
-    text-decoration: none;
+/*--------------- main ---------------*/
+main {
+    height: 600px;
+    background: cadetblue;
+    display: flex;
+}
+
+div#menu {
+    height: 100%;
+    width: 265px;
+    background: #DDD;
+}
+div#content {
+    width: 655px;
+    height: 100%;
+    background: #352525;
+    margin-left: 22px;
+}
+
+footer {
+    height: 100px;
+    background: #CCC;
+}
+
+.menu {
+    height: 200px;
+    background: #80ff60;
+    margin-bottom: 50px;
+}
+
+div#mainview {
+    height: 280px;
+    width: 100%;
+    background: #f58d76;
 }
