@@ -4,8 +4,9 @@ html {
 }
 
 body {
-    margin: 0;
+    height: 100vh;
     padding: 0;
+    margin: 0;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     background: #F6F6F6;
     color: #515151;
@@ -13,7 +14,6 @@ body {
     font-size: 13px;
     line-height: 180%;
     border-top: solid 10px #6CC6C4;
-    height: 100vh;
 }
 
 #wrapper {
@@ -29,17 +29,15 @@ a {
 /*--------------- header ---------------*/
 header {
     height: 130px;
-    /*background: #CCC;*/
     position: relative;
 }
 
 h1 {
-    /*background-color: blue;*/
     position: absolute;
     top: 30%;
     left: 0;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 header h1 img {
@@ -51,36 +49,34 @@ header h1 img {
     position: absolute;
     top: 10px;
     right: 0;
-    /*background: beige;*/
     font-size: 75%;
 }
 
 #info {
     position: absolute;
-    /* background-color: palegoldenrod; */
-    right: 0;
     width: 215px;
-    top: 40px;
     height: 80px;
+    top: 40px;
+    right: 0;
 }
 
 #tel {
-    font-size: 200%;
-    margin: 15px 0 0 0;
-    padding-left: 30px;
     position: absolute;
+    padding-left: 30px;
+    margin: 15px 0 0 0;
+    font-size: 200%;
     background: url(img/bgTel.png) left center no-repeat;
 }
 
 #open {
     position: absolute;
     font-size: 75%;
-    border: solid 1px #CCC;
     width: 212px;
     bottom: 0;
     text-align: center;
     padding: 5px 0;
     margin: 0;
+    border: solid 1px #CCC;
 }
 
 #open span {
@@ -89,12 +85,9 @@ header h1 img {
 
 /*--------------- nav ---------------*/
 nav {
-    height: 80px;
-    background: -moz-linear-gradient(top, #92DDDB, #6cc6c4);
-    background: -webkit-linear-gradient(top, #92DDDB, #6cc6c4);
-    background: linear-gradient(to bottom, #92DDDB, #6cc6c4);
     display: flex;
     align-items: center;
+    height: 80px;
     padding: 0;
     margin: 0;
     border: solid 1px #6cc6c4;
@@ -106,11 +99,14 @@ nav div + div {
 }
 
 .navitem {
-    margin: 0 auto;
-    display: flex;
-    padding: 0;
+    background: -moz-linear-gradient(top, #92DDDB, #6cc6c4);
+    background: -webkit-linear-gradient(top, #92DDDB, #6cc6c4);
+    background: linear-gradsient(to bottom, #92DDDB, #6cc6c4);
     width: 20%;
     height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     border-right: solid 1px #6cc6c4;
@@ -119,12 +115,12 @@ nav div + div {
 }
 
 .navitem a {
+    width: 100%;
     color: #FFF;
     font-weight: bold;
-    width: 100%;
-    /* height: 82px; */
     text-align: center;
     line-height: 17px;
+    text-shadow: 1px 3px 3px #6db2b078;
 }
 
 .navitem a span {
@@ -145,37 +141,37 @@ nav div + div {
 /*--------------- main ---------------*/
 main {
     height: 730px;
-    /*background: cadetblue;*/
     display: flex;
+    flex-direction: row-reverse;
     margin-top: 15px;
 }
+
 #menu {
     height: 100%;
     width: 265px;
     text-align: left;
-    /*background: #DDD;*/
 }
 
 .menutitle {
+    display: block;
     height: 30px;
     line-height: 30px;
-    display: block;
     padding: 5px 0 5px 10px;
+    margin: 0 auto;
     background: -moz-linear-gradient(top, #92DDDB, #6cc6c4);
     background: -webkit-linear-gradient(top, #92DDDB, #6cc6c4);
     background: linear-gradient(to bottom, #92DDDB, #6cc6c4);
-    border: solid 1px #6cc6c4;
-    border-bottom: 0;
     font-size: 16px;
     color: #FFF;
-    margin: 0 auto;
+    border: solid 1px #6cc6c4;
+    border-bottom: 0;
     border-radius: 6px 6px 0 0;
 }
 
 .menu {
     height: 200px;
-    background: #FFF;
     margin: 0 0 20px 0;
+    background: #FFF;
     border: solid 1px #6cc6c4;
 }
 
@@ -187,26 +183,27 @@ main {
 }
 
 .menu li {
+    position: relative;
     padding: 0 0 10px 30px;
     margin: 0 10px 10px 10px;
     border-bottom: solid 1px #6cc6c4;
-    position: relative;
 }
 
 .menu li::after {
     display: block;
-    content: "◆";
-    color: #6cc6c4;
     position: absolute;
     top: 0px;
     left: 10px;
+    content: "◆";
+    color: #6cc6c4;
+    
 }
 .menu a {
+    display: block;
+    width: 100%;
     color: #515151;
     font-size: 14px;
     font-weight: bold;
-    display: block;
-    width: 100%;
 }
 
 .menu  a:hover {
@@ -215,39 +212,38 @@ main {
 
 
 #content {
-    width: 655px;
+    width: 677px;
     height: 100%;
-    /*background: #352525;*/
     margin-left: 22px;
 }
 
 
 #mainview {
-    height: 280px;
     width: 100%;
-    background: #f58d76;
+    height: auto;
 }
 
 article {
-    background: #FFF;
+    display: flex;
     height: 430px;
+    background: #FFF;
     margin-top: 10px;
     border-radius: 0 0 6px 6px;
-    display: flex;
+    overflow: auto;
 }
 
-article inner {
-    padding: 20px;
+article #inner {
     display: block;
     width: 100%;
+    padding: 20px;
 }
 
 #newrelease {
     display: flex;
+    height: 50px;
+    margin: 0 0 10px 0;
     align-items: center;
     font-size: 15px;
-    margin: 0 0 10px 0;
-    height: 50px;
     border-bottom: solid 3px #6cc6c4;
 }
 
@@ -256,10 +252,10 @@ article inner {
 }
 
 #newslist dt {
-    font-weight: bold;
     float: left;
     width: fit-content;
     padding: 10px 0;
+    font-weight: bold;
 }
 
 #newslist dd {
@@ -271,13 +267,12 @@ article inner {
 
 footer {
     height: 100px;
-    /*background: #CCC;*/
+    padding-top: 10px;
 }
 
 .footer {
     display: flex;
     width: 100%;
-    /* align-items: center; */
     height: 30px;
     background: #6cc6c4;
     border-radius: 6px;
@@ -290,8 +285,8 @@ footer {
 }
 
 .footer ul li {
+    position: relative;
     padding-right: 70px;
-    position:relative;
 }
 
 .footer ul li a {
@@ -305,11 +300,11 @@ footer {
 
 .footer ul li::before {
     display: block;
-    content: "〇";
-    color: #FFF;
     position: absolute;
     top: 0px;
     left: -20px;
+    content: "〇";
+    color: #FFF;
     font-weight: bold;
 }
 
@@ -322,4 +317,137 @@ footer {
 .copylight {
     padding: 3px 0;
     border-top: solid 2px #6cc6c4;
+}
+
+@media screen and (max-width:750px) {
+    #wrapper {
+        width: 100%;        
+    }
+    
+    header {
+        position: relative;
+        height: 160px;
+    }
+    
+    h1 {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    #catchcopy {
+        position: absolute;
+        top: 41px;
+        right: 0;
+        left: 0;
+        font-size: 75%;
+    }
+    
+    #info {
+        position: absolute;
+        width: 215px;
+        height: 80px;
+        top: 65px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    
+    #open span {
+        display: inline;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        width: 100%;
+        height: 240px;
+        padding: 0 3%;
+        margin: 0px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .navitem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        width: 50%;
+        height: 80px;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+    
+     main {
+        width: 100%;
+        flex-flow: column;
+        height: auto;
+     }
+     
+     #content {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 0 3%;
+        margin: 20px 0;
+     }
+     
+     #mainview  {
+        box-sizing: border-box;
+     }
+    
+    #mainview img {
+        max-width: 100%;
+        height: auto;
+    }
+     
+    #newslist dt {
+        float: none;
+    }
+    
+    #newslist dd {
+        padding: 10px 0;
+    }
+    
+    article {
+        height: auto;
+    }
+    
+    #menu {
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        padding: 0 3%;
+        text-align: left;
+    }
+    
+    .menutitle {
+        width: auto;
+    }
+    
+    footer {
+        padding: 0 3%;
+    }
+    
+    .footer {
+        height: auto;
+    }
+    
+    .footer ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #clinicaddress strong, span {
+        display: block;
+    }
 }
