@@ -132,8 +132,8 @@ nav div + div {
     padding: 25px;
     height: 100%;
     line-height: 10px;
-    text-shadow: 1px 3px 3px #6db2b078;
     box-sizing: border-box;
+    text-shadow: 1px 3px 3px #6db2b078;
 }
 
 .navitem p {
@@ -161,7 +161,7 @@ main {
 
 #menu {
     height: 100%;
-    width: 265px;
+    width: 258px;
     text-align: left;
 }
 
@@ -225,7 +225,7 @@ main {
 
 
 #content {
-    width: 677px;
+    width: 640px;
     height: 100%;
     margin-left: 22px;
 }
