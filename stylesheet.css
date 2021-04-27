@@ -153,7 +153,7 @@ nav div + div {
 
 /*--------------- main ---------------*/
 main {
-    height: 730px;
+    height: 725px;
     display: flex;
     flex-direction: row-reverse;
     margin-top: 15px;
@@ -233,14 +233,14 @@ main {
 
 #mainview {
     width: 100%;
-    height: auto;
+    height: 280px;
 }
 
 article {
     display: flex;
     height: 430px;
     background: #FFF;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 0 0 6px 6px;
     overflow: auto;
 }
@@ -280,7 +280,7 @@ article #inner {
 
 footer {
     height: 100px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .footer {
@@ -426,6 +426,7 @@ footer {
      
      #mainview  {
         box-sizing: border-box;
+        height: auto;
      }
     
     #mainview img {
