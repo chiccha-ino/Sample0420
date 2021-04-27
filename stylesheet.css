@@ -114,16 +114,29 @@ nav div + div {
     align-items: center;
 }
 
+.navitem:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.navitem:last-child {
+    border-right:none;
+    border-radius: 0 6px 6px 0;
+}
+
 .navitem a {
     width: 100%;
     color: #FFF;
     font-weight: bold;
     text-align: center;
-    line-height: 17px;
+    display: block;
+    padding: 25px;
+    height: 100%;
+    line-height: 10px;
     text-shadow: 1px 3px 3px #6db2b078;
+    box-sizing: border-box;
 }
 
-.navitem a span {
+.navitem p {
     font-size: 10px;
 }
 
@@ -386,6 +399,16 @@ footer {
         margin: 0 auto;
         border-radius: 6px;
     }
+    
+    .navitem:first-child {
+        border-radius: 6px;
+    }    
+
+    .navitem:last-child {
+        border-right:none;
+        border-radius: 6px;
+    }
+    
     
      main {
         width: 100%;
